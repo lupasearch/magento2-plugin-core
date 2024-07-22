@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <lupasearch>
+            <general>
+                <password backend_model="Magento\Config\Model\Config\Backend\Encrypted"/>
+                <jwt_token backend_model="Magento\Config\Model\Config\Backend\Encrypted"/>
+                <api_key backend_model="Magento\Config\Model\Config\Backend\Encrypted"/>
+                <search_path>search.html</search_path>
+                <search_query_key>query</search_query_key>
+            </general>
+        </lupasearch>
+    </default>
+</config>
