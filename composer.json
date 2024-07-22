@@ -1,0 +1,48 @@
+{
+    "name": "lupasearch/magento2-lupasearch-plugin-core",
+    "version": "1.0.0",
+    "description": "LupaSearch API Core module for Magento 2",
+    "type": "magento2-module",
+    "config": {
+        "allow-plugins": {
+            "magento/magento-composer-installer": false,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "magento/composer-dependency-version-audit-plugin": true
+        }
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-json": "*",
+        "magento/framework": "*",
+        "magento/module-store": "*",
+        "magento/module-config": "*",
+        "lupasearch/lupasearch-php-client": "~0.5.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "squizlabs/php_codesniffer": "~3.7.2"
+    },
+    "license": "proprietary",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "LupaSearch\\LupaSearchPluginCore\\": ""
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "archive": {
+        "exclude": [
+            "/Test",
+            ".gitattributes",
+            ".gitignore",
+            "phpunit.xml"
+        ]
+    }
+}

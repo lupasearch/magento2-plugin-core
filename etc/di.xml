@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="LupaSearch\Factories\HttpClientFactoryInterface" type="LupaSearch\Factories\HttpClientFactory"/>
+    <preference for="LupaSearch\LupaClientInterface" type="LupaSearch\LupaClient"/>
+    <preference for="LupaSearch\Handlers\ErrorHandlerInterface" type="LupaSearch\Handlers\RequestErrorHandler"/>
+
+    <preference for="LupaSearch\LupaSearchPluginCore\Api\DocumentsApiInterface" type="LupaSearch\LupaSearchPluginCore\Model\DocumentsApi"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Api\SearchQueriesApiInterface" type="LupaSearch\LupaSearchPluginCore\Model\SearchQueriesApi"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Api\SuggestionsApiInterface" type="LupaSearch\LupaSearchPluginCore\Model\SuggestionsApi"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Api\Data\SearchQueries\DocumentQueryResponseInterface" type="LupaSearch\LupaSearchPluginCore\Model\Data\SearchQueries\DocumentQueryResponse"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Api\Data\SearchQueries\DocumentQueryInterface" type="LupaSearch\LupaSearchPluginCore\Model\Data\SearchQueries\DocumentQuery"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Api\Data\SearchQueries\OrderedMapInterface" type="LupaSearch\LupaSearchPluginCore\Model\Data\SearchQueries\OrderedMap"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Api\Data\SearchQueries\QueriesInterface" type="LupaSearch\LupaSearchPluginCore\Model\Data\SearchQueries\Queries"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Api\Data\SearchQueries\SearchQueryConfigurationInterface" type="LupaSearch\LupaSearchPluginCore\Model\Data\SearchQueries\SearchQueryConfiguration"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Api\Data\SearchQueries\SearchQueryInterface" type="LupaSearch\LupaSearchPluginCore\Model\Data\SearchQueries\SearchQuery"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Api\Data\SearchQueries\SuggestionQueryConfigurationInterface" type="LupaSearch\LupaSearchPluginCore\Model\Data\SearchQueries\SuggestionQueryConfiguration"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Api\Data\SearchQueries\SuggestionQueryInterface" type="LupaSearch\LupaSearchPluginCore\Model\Data\SearchQueries\SuggestionQuery"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Api\Data\SearchQueries\SuggestionQueryResponseInterface" type="LupaSearch\LupaSearchPluginCore\Model\Data\SearchQueries\SuggestionQueryResponse"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Factories\DocumentQueryResponseFactoryInterface" type="LupaSearch\LupaSearchPluginCore\Factories\DocumentQueryResponseFactory"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Factories\QueriesFactoryInterface" type="LupaSearch\LupaSearchPluginCore\Factories\QueriesFactory"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Factories\QueryConfigurationFactoryInterface" type="LupaSearch\LupaSearchPluginCore\Factories\QueryConfigurationFactory"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Factories\SearchQueryFactoryInterface" type="LupaSearch\LupaSearchPluginCore\Factories\SearchQueryFactory"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Factories\SuggestionQueryResponseFactoryInterface" type="LupaSearch\LupaSearchPluginCore\Factories\SuggestionQueryResponseFactory"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Model\Config\GeneralConfigInterface" type="LupaSearch\LupaSearchPluginCore\Model\Config\GeneralConfig"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Model\LupaClientFactoryInterface" type="LupaSearch\LupaSearchPluginCore\Model\LupaClientFactory"/>
+    <preference for="LupaSearch\LupaSearchPluginCore\Model\Provider\UrlProviderInterface" type="LupaSearch\LupaSearchPluginCore\Model\Provider\UrlProvider"/>
+</config>
